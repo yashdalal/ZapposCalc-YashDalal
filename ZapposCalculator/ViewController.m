@@ -13,15 +13,32 @@
 @end
 
 @implementation ViewController
+NSMutableString *x;
+bool operatorPressed = NO;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    x = [[NSMutableString alloc]init];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(IBAction)numberEntered:(id)sender{
+
+    UIButton *button = (UIButton *)sender;
+    //    NSString *buttonTitle = button.currentTitle;
+    //    val1.text = buttonTitle;
+    [x appendString: button.currentTitle] ;
+    val1.text = x;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)buttonClicked:(id)sender {
+    NSLog(@"Button pressed: %@", [sender currentTitle]);
+}
+
 
 @end
