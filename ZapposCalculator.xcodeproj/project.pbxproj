@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2ABD204F1C63C91F000DB369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD204E1C63C91F000DB369 /* main.m */; };
+		2ABD20521C63C91F000DB369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20511C63C91F000DB369 /* AppDelegate.m */; };
+		2ABD20551C63C91F000DB369 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20541C63C91F000DB369 /* ViewController.m */; };
+		2ABD20581C63C91F000DB369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD20561C63C91F000DB369 /* Main.storyboard */; };
+		2ABD205A1C63C91F000DB369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD20591C63C91F000DB369 /* Assets.xcassets */; };
+		2ABD205D1C63C91F000DB369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD205B1C63C91F000DB369 /* LaunchScreen.storyboard */; };
+		2ABD20681C63C91F000DB369 /* ZapposCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20671C63C91F000DB369 /* ZapposCalculatorTests.m */; };
+		2ABD20731C63C91F000DB369 /* ZapposCalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20721C63C91F000DB369 /* ZapposCalculatorUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ABD20641C63C91F000DB369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ABD20421C63C91F000DB369 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ABD20491C63C91F000DB369;
+			remoteInfo = ZapposCalculator;
+		};
+		2ABD206F1C63C91F000DB369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ABD20421C63C91F000DB369 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ABD20491C63C91F000DB369;
+			remoteInfo = ZapposCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2ABD204A1C63C91F000DB369 /* ZapposCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZapposCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ABD204E1C63C91F000DB369 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2ABD20501C63C91F000DB369 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2ABD20511C63C91F000DB369 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2ABD20531C63C91F000DB369 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2ABD20541C63C91F000DB369 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2ABD20571C63C91F000DB369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2ABD20591C63C91F000DB369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ABD205C1C63C91F000DB369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2ABD205E1C63C91F000DB369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ABD20631C63C91F000DB369 /* ZapposCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZapposCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ABD20671C63C91F000DB369 /* ZapposCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZapposCalculatorTests.m; sourceTree = "<group>"; };
+		2ABD20691C63C91F000DB369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ABD206E1C63C91F000DB369 /* ZapposCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZapposCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ABD20721C63C91F000DB369 /* ZapposCalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZapposCalculatorUITests.m; sourceTree = "<group>"; };
+		2ABD20741C63C91F000DB369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ABD20471C63C91F000DB369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ABD20601C63C91F000DB369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ABD206B1C63C91F000DB369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ABD20411C63C91F000DB369 = {
+			isa = PBXGroup;
+			children = (
+				2ABD204C1C63C91F000DB369 /* ZapposCalculator */,
+				2ABD20661C63C91F000DB369 /* ZapposCalculatorTests */,
+				2ABD20711C63C91F000DB369 /* ZapposCalculatorUITests */,
+				2ABD204B1C63C91F000DB369 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2ABD204B1C63C91F000DB369 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ABD204A1C63C91F000DB369 /* ZapposCalculator.app */,
+				2ABD20631C63C91F000DB369 /* ZapposCalculatorTests.xctest */,
+				2ABD206E1C63C91F000DB369 /* ZapposCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ABD204C1C63C91F000DB369 /* ZapposCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				2ABD20501C63C91F000DB369 /* AppDelegate.h */,
+				2ABD20511C63C91F000DB369 /* AppDelegate.m */,
+				2ABD20531C63C91F000DB369 /* ViewController.h */,
+				2ABD20541C63C91F000DB369 /* ViewController.m */,
+				2ABD20561C63C91F000DB369 /* Main.storyboard */,
+				2ABD20591C63C91F000DB369 /* Assets.xcassets */,
+				2ABD205B1C63C91F000DB369 /* LaunchScreen.storyboard */,
+				2ABD205E1C63C91F000DB369 /* Info.plist */,
+				2ABD204D1C63C91F000DB369 /* Supporting Files */,
+			);
+			path = ZapposCalculator;
+			sourceTree = "<group>";
+		};
+		2ABD204D1C63C91F000DB369 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ABD204E1C63C91F000DB369 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ABD20661C63C91F000DB369 /* ZapposCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2ABD20671C63C91F000DB369 /* ZapposCalculatorTests.m */,
+				2ABD20691C63C91F000DB369 /* Info.plist */,
+			);
+			path = ZapposCalculatorTests;
+			sourceTree = "<group>";
+		};
+		2ABD20711C63C91F000DB369 /* ZapposCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2ABD20721C63C91F000DB369 /* ZapposCalculatorUITests.m */,
+				2ABD20741C63C91F000DB369 /* Info.plist */,
+			);
+			path = ZapposCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ABD20491C63C91F000DB369 /* ZapposCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ABD20771C63C91F000DB369 /* Build configuration list for PBXNativeTarget "ZapposCalculator" */;
+			buildPhases = (
+				2ABD20461C63C91F000DB369 /* Sources */,
+				2ABD20471C63C91F000DB369 /* Frameworks */,
+				2ABD20481C63C91F000DB369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZapposCalculator;
+			productName = ZapposCalculator;
+			productReference = 2ABD204A1C63C91F000DB369 /* ZapposCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2ABD20621C63C91F000DB369 /* ZapposCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ABD207A1C63C91F000DB369 /* Build configuration list for PBXNativeTarget "ZapposCalculatorTests" */;
+			buildPhases = (
+				2ABD205F1C63C91F000DB369 /* Sources */,
+				2ABD20601C63C91F000DB369 /* Frameworks */,
+				2ABD20611C63C91F000DB369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ABD20651C63C91F000DB369 /* PBXTargetDependency */,
+			);
+			name = ZapposCalculatorTests;
+			productName = ZapposCalculatorTests;
+			productReference = 2ABD20631C63C91F000DB369 /* ZapposCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2ABD206D1C63C91F000DB369 /* ZapposCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ABD207D1C63C91F000DB369 /* Build configuration list for PBXNativeTarget "ZapposCalculatorUITests" */;
+			buildPhases = (
+				2ABD206A1C63C91F000DB369 /* Sources */,
+				2ABD206B1C63C91F000DB369 /* Frameworks */,
+				2ABD206C1C63C91F000DB369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ABD20701C63C91F000DB369 /* PBXTargetDependency */,
+			);
+			name = ZapposCalculatorUITests;
+			productName = ZapposCalculatorUITests;
+			productReference = 2ABD206E1C63C91F000DB369 /* ZapposCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2ABD20421C63C91F000DB369 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Yash Dalal";
+				TargetAttributes = {
+					2ABD20491C63C91F000DB369 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2ABD20621C63C91F000DB369 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 2ABD20491C63C91F000DB369;
+					};
+					2ABD206D1C63C91F000DB369 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 2ABD20491C63C91F000DB369;
+					};
+				};
+			};
+			buildConfigurationList = 2ABD20451C63C91F000DB369 /* Build configuration list for PBXProject "ZapposCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2ABD20411C63C91F000DB369;
+			productRefGroup = 2ABD204B1C63C91F000DB369 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2ABD20491C63C91F000DB369 /* ZapposCalculator */,
+				2ABD20621C63C91F000DB369 /* ZapposCalculatorTests */,
+				2ABD206D1C63C91F000DB369 /* ZapposCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2ABD20481C63C91F000DB369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABD205D1C63C91F000DB369 /* LaunchScreen.storyboard in Resources */,
+				2ABD205A1C63C91F000DB369 /* Assets.xcassets in Resources */,
+				2ABD20581C63C91F000DB369 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ABD20611C63C91F000DB369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ABD206C1C63C91F000DB369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ABD20461C63C91F000DB369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABD20551C63C91F000DB369 /* ViewController.m in Sources */,
+				2ABD20521C63C91F000DB369 /* AppDelegate.m in Sources */,
+				2ABD204F1C63C91F000DB369 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ABD205F1C63C91F000DB369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABD20681C63C91F000DB369 /* ZapposCalculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ABD206A1C63C91F000DB369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABD20731C63C91F000DB369 /* ZapposCalculatorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ABD20651C63C91F000DB369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ABD20491C63C91F000DB369 /* ZapposCalculator */;
+			targetProxy = 2ABD20641C63C91F000DB369 /* PBXContainerItemProxy */;
+		};
+		2ABD20701C63C91F000DB369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ABD20491C63C91F000DB369 /* ZapposCalculator */;
+			targetProxy = 2ABD206F1C63C91F000DB369 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2ABD20561C63C91F000DB369 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ABD20571C63C91F000DB369 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2ABD205B1C63C91F000DB369 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ABD205C1C63C91F000DB369 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2ABD20751C63C91F000DB369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2ABD20761C63C91F000DB369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2ABD20781C63C91F000DB369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZapposCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yashdalal.ZapposCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2ABD20791C63C91F000DB369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZapposCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yashdalal.ZapposCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2ABD207B1C63C91F000DB369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZapposCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yashdalal.ZapposCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZapposCalculator.app/ZapposCalculator";
+			};
+			name = Debug;
+		};
+		2ABD207C1C63C91F000DB369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZapposCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yashdalal.ZapposCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZapposCalculator.app/ZapposCalculator";
+			};
+			name = Release;
+		};
+		2ABD207E1C63C91F000DB369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZapposCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yashdalal.ZapposCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZapposCalculator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2ABD207F1C63C91F000DB369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZapposCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yashdalal.ZapposCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZapposCalculator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2ABD20451C63C91F000DB369 /* Build configuration list for PBXProject "ZapposCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ABD20751C63C91F000DB369 /* Debug */,
+				2ABD20761C63C91F000DB369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ABD20771C63C91F000DB369 /* Build configuration list for PBXNativeTarget "ZapposCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ABD20781C63C91F000DB369 /* Debug */,
+				2ABD20791C63C91F000DB369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2ABD207A1C63C91F000DB369 /* Build configuration list for PBXNativeTarget "ZapposCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ABD207B1C63C91F000DB369 /* Debug */,
+				2ABD207C1C63C91F000DB369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2ABD207D1C63C91F000DB369 /* Build configuration list for PBXNativeTarget "ZapposCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ABD207E1C63C91F000DB369 /* Debug */,
+				2ABD207F1C63C91F000DB369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2ABD20421C63C91F000DB369 /* Project object */;
+}
