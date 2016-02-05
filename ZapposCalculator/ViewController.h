@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {ADD, SUBTRACT, MULTIPLY, DIVIDE} Operation;
+typedef enum {ADD, SUBTRACT, MULTIPLY, DIVIDE, NONE} Operation;
 
 @interface ViewController : UIViewController{
     IBOutlet UITextField *num1;
