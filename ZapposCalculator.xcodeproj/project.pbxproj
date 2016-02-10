@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A14027E1C6AB5200068DE8F /* adele1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A14027D1C6AB51F0068DE8F /* adele1.jpg */; };
+		2A1402841C6ACD360068DE8F /* singing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A1402831C6ACD360068DE8F /* singing.jpg */; };
+		2A1402861C6AD1730068DE8F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1402851C6AD1730068DE8F /* AVFoundation.framework */; };
+		2A1402881C6AD34C0068DE8F /* hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A1402871C6AD34C0068DE8F /* hello.mp3 */; };
 		2ABD204F1C63C91F000DB369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD204E1C63C91F000DB369 /* main.m */; };
 		2ABD20521C63C91F000DB369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20511C63C91F000DB369 /* AppDelegate.m */; };
 		2ABD20551C63C91F000DB369 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20541C63C91F000DB369 /* ViewController.m */; };
@@ -15,6 +19,10 @@
 		2ABD205D1C63C91F000DB369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD205B1C63C91F000DB369 /* LaunchScreen.storyboard */; };
 		2ABD20681C63C91F000DB369 /* ZapposCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20671C63C91F000DB369 /* ZapposCalculatorTests.m */; };
 		2ABD20731C63C91F000DB369 /* ZapposCalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20721C63C91F000DB369 /* ZapposCalculatorUITests.m */; };
+		2ABD208F1C6864A5000DB369 /* numbers-icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD208C1C6864A5000DB369 /* numbers-icon-120.png */; };
+		2ABD20901C6864A5000DB369 /* numbers-icon-150.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD208D1C6864A5000DB369 /* numbers-icon-150.png */; };
+		2ABD20911C6864A5000DB369 /* numbers-icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD208E1C6864A5000DB369 /* numbers-icon-180.png */; };
+		2ABD20971C699DA1000DB369 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20961C699DA1000DB369 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A14027D1C6AB51F0068DE8F /* adele1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = adele1.jpg; sourceTree = "<group>"; };
+		2A1402831C6ACD360068DE8F /* singing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = singing.jpg; sourceTree = "<group>"; };
+		2A1402851C6AD1730068DE8F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2A1402871C6AD34C0068DE8F /* hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hello.mp3; path = ../../../../Desktop/adele/hello.mp3; sourceTree = "<group>"; };
 		2ABD204A1C63C91F000DB369 /* ZapposCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZapposCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ABD204E1C63C91F000DB369 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ABD20501C63C91F000DB369 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +63,11 @@
 		2ABD206E1C63C91F000DB369 /* ZapposCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZapposCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ABD20721C63C91F000DB369 /* ZapposCalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZapposCalculatorUITests.m; sourceTree = "<group>"; };
 		2ABD20741C63C91F000DB369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ABD208C1C6864A5000DB369 /* numbers-icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "numbers-icon-120.png"; sourceTree = "<group>"; };
+		2ABD208D1C6864A5000DB369 /* numbers-icon-150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "numbers-icon-150.png"; sourceTree = "<group>"; };
+		2ABD208E1C6864A5000DB369 /* numbers-icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "numbers-icon-180.png"; sourceTree = "<group>"; };
+		2ABD20951C699DA1000DB369 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2ABD20961C699DA1000DB369 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1402861C6AD1730068DE8F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,7 @@
 		2ABD20411C63C91F000DB369 = {
 			isa = PBXGroup;
 			children = (
+				2A1402851C6AD1730068DE8F /* AVFoundation.framework */,
 				2ABD204C1C63C91F000DB369 /* ZapposCalculator */,
 				2ABD20661C63C91F000DB369 /* ZapposCalculatorTests */,
 				2ABD20711C63C91F000DB369 /* ZapposCalculatorUITests */,
@@ -101,6 +120,12 @@
 		2ABD204C1C63C91F000DB369 /* ZapposCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				2A14027D1C6AB51F0068DE8F /* adele1.jpg */,
+				2A1402871C6AD34C0068DE8F /* hello.mp3 */,
+				2A1402831C6ACD360068DE8F /* singing.jpg */,
+				2ABD208C1C6864A5000DB369 /* numbers-icon-120.png */,
+				2ABD208D1C6864A5000DB369 /* numbers-icon-150.png */,
+				2ABD208E1C6864A5000DB369 /* numbers-icon-180.png */,
 				2ABD20501C63C91F000DB369 /* AppDelegate.h */,
 				2ABD20511C63C91F000DB369 /* AppDelegate.m */,
 				2ABD20531C63C91F000DB369 /* ViewController.h */,
@@ -110,6 +135,8 @@
 				2ABD205B1C63C91F000DB369 /* LaunchScreen.storyboard */,
 				2ABD205E1C63C91F000DB369 /* Info.plist */,
 				2ABD204D1C63C91F000DB369 /* Supporting Files */,
+				2ABD20951C699DA1000DB369 /* HomeViewController.h */,
+				2ABD20961C699DA1000DB369 /* HomeViewController.m */,
 			);
 			path = ZapposCalculator;
 			sourceTree = "<group>";
@@ -244,7 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ABD205D1C63C91F000DB369 /* LaunchScreen.storyboard in Resources */,
+				2A1402881C6AD34C0068DE8F /* hello.mp3 in Resources */,
+				2ABD20911C6864A5000DB369 /* numbers-icon-180.png in Resources */,
+				2A14027E1C6AB5200068DE8F /* adele1.jpg in Resources */,
+				2ABD208F1C6864A5000DB369 /* numbers-icon-120.png in Resources */,
 				2ABD205A1C63C91F000DB369 /* Assets.xcassets in Resources */,
+				2A1402841C6ACD360068DE8F /* singing.jpg in Resources */,
+				2ABD20901C6864A5000DB369 /* numbers-icon-150.png in Resources */,
 				2ABD20581C63C91F000DB369 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +306,7 @@
 				2ABD20551C63C91F000DB369 /* ViewController.m in Sources */,
 				2ABD20521C63C91F000DB369 /* AppDelegate.m in Sources */,
 				2ABD204F1C63C91F000DB369 /* main.m in Sources */,
+				2ABD20971C699DA1000DB369 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +530,7 @@
 				2ABD20791C63C91F000DB369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ABD207A1C63C91F000DB369 /* Build configuration list for PBXNativeTarget "ZapposCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +539,7 @@
 				2ABD207C1C63C91F000DB369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ABD207D1C63C91F000DB369 /* Build configuration list for PBXNativeTarget "ZapposCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +548,7 @@
 				2ABD207F1C63C91F000DB369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
