@@ -24,7 +24,9 @@ bool operatorPressed = NO;
 bool firstClick = YES;
 bool evaluated = NO;
 bool nextIsOperator = NO;
-int count = 0;
+bool repeatedEquals = NO;
+double storage2;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,6 +52,7 @@ int count = 0;
     currentOperation = NONE;
     operatorPressed = NO;
     firstClick = YES;
+    storage2 = 0;
 }
 
 
@@ -66,7 +69,6 @@ int count = 0;
         [secondNum appendString: button.currentTitle] ;
         val1.text = secondNum;
     }
-    count++;
 }
 
 -(void) firstClickReset{
@@ -107,7 +109,7 @@ int count = 0;
     ans.text = [NSString stringWithFormat:@"%@ + ", firstNum];
     val1.text = @"";
     operatorPressed = YES;
-    count++;
+    repeatedEquals = NO;
 }
 
 -(IBAction)subtractSelected:(id)sender{
@@ -133,6 +135,7 @@ int count = 0;
         ans.text = [NSString stringWithFormat:@"%@ - ", val1.text];
         val1.text = @"";
         operatorPressed = YES;
+        repeatedEquals = NO;
     }
 }
 
@@ -147,8 +150,7 @@ int count = 0;
     ans.text = [NSString stringWithFormat:@"%@ × ", val1.text];
     val1.text = @"";
     operatorPressed = YES;
-    
-    count++;
+    repeatedEquals = NO;
 }
 
 -(IBAction)divideSelected:(id)sender{
@@ -162,6 +164,7 @@ int count = 0;
     ans.text = [NSString stringWithFormat:@"%@ / ", val1.text];
     val1.text = @"";
     operatorPressed = YES;
+    repeatedEquals = NO;
 }
 
 -(void)drawAdele{
@@ -180,41 +183,57 @@ int count = 0;
 }
 
 -(void) evaluate{
-    double int1 = [firstNum doubleValue];
-    double int2 = [secondNum doubleValue];
+    double number1 = [firstNum doubleValue];
+    double number2 = [secondNum doubleValue];
     double answer = 0.0;
-    
+    NSString *opsign = [[NSString alloc]init];
+    if(repeatedEquals){
+        number2 = storage2;
+    }
     switch (currentOperation){
         case NONE:
             answer = [firstNum intValue];
-            //add message here
             break;
         case ADD:
-            answer = int1 + int2;
+            answer = number1 + number2;
             firstNum = [NSMutableString stringWithFormat:@"%g",answer];
             secondNum = [NSMutableString stringWithString:@""];
+            opsign = @"+";
             break;
         case SUBTRACT:
-            answer = int1 - int2;
+            answer = number1 - number2;
             firstNum = [NSMutableString stringWithFormat:@"%g",answer];
             secondNum = [NSMutableString stringWithString:@""];
+            opsign = @"-";
             break;
         case MULTIPLY:
-            answer = int1 * int2;
+            answer = number1 * number2;
             firstNum = [NSMutableString stringWithFormat:@"%g",answer];
             secondNum = [NSMutableString stringWithString:@""];
+            opsign = @"/";
             break;
         case DIVIDE:
-            if(int2!=0){
-                answer = int1 / int2;
+            if(number2!=0){
+                answer = number1 / number2;
                 firstNum = [NSMutableString stringWithFormat:@"%g",answer];
                 secondNum = [NSMutableString stringWithString:@""];
+                opsign = @"/";
             }
             break;
     }
+    storage2 = number2;
+    if(currentOperation==NONE){
+        ans.text = [NSString stringWithFormat:@"%@", ans.text];
+    }else{
+        if(repeatedEquals){
+            ans.text = [NSString stringWithFormat:@"%@ %@ %g", ans.text, opsign, number2];
+        }else{
+            ans.text = [NSString stringWithFormat:@"%@%@", ans.text, val1.text];
+        }
+        
+    }
     
-    ans.text = [NSString stringWithFormat:@"%@%@", ans.text, val1.text];
-    if(int2==0 && operatorPressed){
+    if(number2==0 && operatorPressed){
         val1.text = [NSString stringWithFormat: @"Not Defined"];
     }else{
         val1.text = [NSString stringWithFormat: @"%g",answer];
@@ -226,6 +245,8 @@ int count = 0;
     }else{
         bgview.backgroundColor = [UIColor colorWithRed:0.39607 green:0.39607 blue:0.39607 alpha:1];
     }
+    repeatedEquals = YES;
+    
 }
 
 -(BOOL)canBecomeFirstResponder {
