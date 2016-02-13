@@ -4,7 +4,8 @@
 //
 //  Created by Yash Dalal on 2/4/16.
 //  Copyright © 2016 Yash Dalal. All rights reserved.
-//
+//  This app does some math. Experiment with as much addition, subtraction, multiplication and division.
+//  Both positive and negative numbers are supported
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
@@ -66,7 +67,6 @@ int count = 0;
         val1.text = secondNum;
     }
     count++;
-    NSLog(@"%d",count);
 }
 
 -(void) firstClickReset{
@@ -108,16 +108,10 @@ int count = 0;
     val1.text = @"";
     operatorPressed = YES;
     count++;
-    NSLog(@"%d first: %@",count, firstNum);
 }
 
 -(IBAction)subtractSelected:(id)sender{
-    if(operatorPressed){
-        [self evaluate];
-    }
-    if(evaluated){
-        firstClick = NO;
-    }
+    //negative numbers
     if([val1.text isEqualToString: @""]){
         [self firstClickReset];
         if(!operatorPressed){
@@ -128,6 +122,13 @@ int count = 0;
             val1.text = secondNum;
         }
     }else{
+        //regular subtraction
+        if(operatorPressed){
+            [self evaluate];
+        }
+        if(evaluated){
+            firstClick = NO;
+        }
         currentOperation=SUBTRACT;
         ans.text = [NSString stringWithFormat:@"%@ - ", val1.text];
         val1.text = @"";
@@ -213,13 +214,13 @@ int count = 0;
     }
     
     ans.text = [NSString stringWithFormat:@"%@%@", ans.text, val1.text];
-    if(int2==0){
+    if(int2==0 && operatorPressed){
         val1.text = [NSString stringWithFormat: @"Not Defined"];
     }else{
         val1.text = [NSString stringWithFormat: @"%g",answer];
     }
     
-    if([val1.text isEqualToString:@"25"]){
+    if([val1.text isEqualToString:@"25"]||[val1.text isEqualToString:@"21"]||[val1.text isEqualToString:@"19"]){
         bgview.alpha = 0.3;
         [self drawAdele];
     }else{

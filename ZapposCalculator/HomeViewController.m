@@ -48,43 +48,10 @@ BOOL blinkStatus = NO;
                      animations:^{ label7.alpha = 1;}
                      completion:nil];
     
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 15 * NSEC_PER_SEC);
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 13 * NSEC_PER_SEC);
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
             [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)(1.0) target:self selector:@selector(blink) userInfo:nil repeats:TRUE];
         });
-    
-    
-//    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(slideToRightWithGestureRecognizer:)];
-//    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
-//    [self.view addGestureRecognizer:swipeRight];
-    
-//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC);
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        label1.textColor = [UIColor whiteColor];
-//        
-//    });
-//    popTime = dispatch_time(DISPATCH_TIME_NOW, 4 * NSEC_PER_SEC);
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        label2.textColor = [UIColor whiteColor];
-//        
-//    });
-//    popTime = dispatch_time(DISPATCH_TIME_NOW, 6 * NSEC_PER_SEC);
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        label3.textColor = [UIColor whiteColor];
-//    });
-//    popTime = dispatch_time(DISPATCH_TIME_NOW, 8 * NSEC_PER_SEC);
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        label4.textColor = [UIColor whiteColor];
-//    });
-//    popTime = dispatch_time(DISPATCH_TIME_NOW, 10 * NSEC_PER_SEC);
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        label5.textColor = [UIColor whiteColor];
-//    });
-//    popTime = dispatch_time(DISPATCH_TIME_NOW, 12 * NSEC_PER_SEC);
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        label6.textColor = [UIColor whiteColor];
-//    });
-//
 }
 
 
