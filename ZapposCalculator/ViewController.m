@@ -22,16 +22,13 @@ NSMutableString *secondNum;
 bool operatorPressed = NO;
 bool firstClick = YES;
 bool evaluated = NO;
+bool nextIsOperator = NO;
+int count = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     firstNum = [[NSMutableString alloc]init];
     secondNum = [[NSMutableString alloc]init];
-    UIGraphicsBeginImageContext(bgview.frame.size);
-    [[UIImage imageNamed:@"adele1.jpg"] drawInRect:bgview.bounds];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    bgview.backgroundColor = [UIColor colorWithPatternImage:image];
     
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"hello" ofType:@"mp3"];
@@ -68,7 +65,8 @@ bool evaluated = NO;
         [secondNum appendString: button.currentTitle] ;
         val1.text = secondNum;
     }
-    
+    count++;
+    NSLog(@"%d",count);
 }
 
 -(void) firstClickReset{
@@ -102,17 +100,24 @@ bool evaluated = NO;
     if(operatorPressed){
         [self evaluate];
     }
+    if(evaluated){
+        firstClick = NO;
+    }
     currentOperation=ADD;
     ans.text = [NSString stringWithFormat:@"%@ + ", firstNum];
     val1.text = @"";
     operatorPressed = YES;
+    count++;
+    NSLog(@"%d first: %@",count, firstNum);
 }
 
 -(IBAction)subtractSelected:(id)sender{
     if(operatorPressed){
         [self evaluate];
     }
-    
+    if(evaluated){
+        firstClick = NO;
+    }
     if([val1.text isEqualToString: @""]){
         [self firstClickReset];
         if(!operatorPressed){
@@ -134,15 +139,23 @@ bool evaluated = NO;
     if(operatorPressed){
         [self evaluate];
     }
+    if(evaluated){
+        firstClick = NO;
+    }
     currentOperation=MULTIPLY;
     ans.text = [NSString stringWithFormat:@"%@ × ", val1.text];
     val1.text = @"";
     operatorPressed = YES;
+    
+    count++;
 }
 
 -(IBAction)divideSelected:(id)sender{
     if(operatorPressed){
         [self evaluate];
+    }
+    if(evaluated){
+        firstClick = NO;
     }
     currentOperation=DIVIDE;
     ans.text = [NSString stringWithFormat:@"%@ / ", val1.text];
@@ -150,11 +163,18 @@ bool evaluated = NO;
     operatorPressed = YES;
 }
 
+-(void)drawAdele{
+    UIGraphicsBeginImageContext(bgview.frame.size);
+    [[UIImage imageNamed:@"adele1.jpg"] drawInRect:bgview.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    bgview.backgroundColor = [UIColor colorWithPatternImage:image];
+}
+
 -(IBAction)calculate:(id)sender{
     [self evaluate];
-    
     evaluated = YES;
-    
+    operatorPressed = NO;
     firstClick = YES;
 }
 
@@ -184,9 +204,7 @@ bool evaluated = NO;
             secondNum = [NSMutableString stringWithString:@""];
             break;
         case DIVIDE:
-            if(int2==0){
-                val1.text = [NSString stringWithFormat: @"Not Defined"];
-            }else{
+            if(int2!=0){
                 answer = int1 / int2;
                 firstNum = [NSMutableString stringWithFormat:@"%g",answer];
                 secondNum = [NSMutableString stringWithString:@""];
@@ -195,8 +213,18 @@ bool evaluated = NO;
     }
     
     ans.text = [NSString stringWithFormat:@"%@%@", ans.text, val1.text];
+    if(int2==0){
+        val1.text = [NSString stringWithFormat: @"Not Defined"];
+    }else{
+        val1.text = [NSString stringWithFormat: @"%g",answer];
+    }
     
-    val1.text = [NSString stringWithFormat: @"%g",answer];
+    if([val1.text isEqualToString:@"25"]){
+        bgview.alpha = 0.3;
+        [self drawAdele];
+    }else{
+        bgview.backgroundColor = [UIColor colorWithRed:0.39607 green:0.39607 blue:0.39607 alpha:1];
+    }
 }
 
 -(BOOL)canBecomeFirstResponder {
@@ -217,16 +245,11 @@ bool evaluated = NO;
     [super viewDidDisappear:NO];
 }
 
--(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-    if (motion == UIEventSubtypeMotionShake )
-    {
-    }
+-(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+
 }
 
-
--(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
+-(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (motion == UIEventSubtypeMotionShake )
     {
         [_audioPlayer play];
@@ -242,18 +265,9 @@ bool evaluated = NO;
     }
 }
 
--(void)playSound:(NSString*) fileName ext: (NSString*) ext{
-    
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (IBAction)buttonClicked:(id)sender {
-    NSLog(@"Button pressed: %@", [sender currentTitle]);
-}
-
 
 @end

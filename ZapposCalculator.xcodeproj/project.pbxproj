@@ -23,6 +23,9 @@
 		2ABD20901C6864A5000DB369 /* numbers-icon-150.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD208D1C6864A5000DB369 /* numbers-icon-150.png */; };
 		2ABD20911C6864A5000DB369 /* numbers-icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD208E1C6864A5000DB369 /* numbers-icon-180.png */; };
 		2ABD20971C699DA1000DB369 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD20961C699DA1000DB369 /* HomeViewController.m */; };
+		2ACBC0ED1C6EE36B0097EBDE /* zappos1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACBC0EA1C6EE36B0097EBDE /* zappos1.png */; };
+		2ACBC0EE1C6EE36B0097EBDE /* zappos2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACBC0EB1C6EE36B0097EBDE /* zappos2.png */; };
+		2ACBC0EF1C6EE36B0097EBDE /* zappos3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACBC0EC1C6EE36B0097EBDE /* zappos3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		2ABD208E1C6864A5000DB369 /* numbers-icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "numbers-icon-180.png"; sourceTree = "<group>"; };
 		2ABD20951C699DA1000DB369 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		2ABD20961C699DA1000DB369 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2ACBC0EA1C6EE36B0097EBDE /* zappos1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zappos1.png; sourceTree = "<group>"; };
+		2ACBC0EB1C6EE36B0097EBDE /* zappos2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zappos2.png; sourceTree = "<group>"; };
+		2ACBC0EC1C6EE36B0097EBDE /* zappos3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zappos3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 		2ABD204C1C63C91F000DB369 /* ZapposCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				2ACBC0EA1C6EE36B0097EBDE /* zappos1.png */,
+				2ACBC0EB1C6EE36B0097EBDE /* zappos2.png */,
+				2ACBC0EC1C6EE36B0097EBDE /* zappos3.png */,
 				2A14027D1C6AB51F0068DE8F /* adele1.jpg */,
 				2A1402871C6AD34C0068DE8F /* hello.mp3 */,
 				2A1402831C6ACD360068DE8F /* singing.jpg */,
@@ -272,8 +281,11 @@
 			files = (
 				2ABD205D1C63C91F000DB369 /* LaunchScreen.storyboard in Resources */,
 				2A1402881C6AD34C0068DE8F /* hello.mp3 in Resources */,
+				2ACBC0ED1C6EE36B0097EBDE /* zappos1.png in Resources */,
 				2ABD20911C6864A5000DB369 /* numbers-icon-180.png in Resources */,
+				2ACBC0EE1C6EE36B0097EBDE /* zappos2.png in Resources */,
 				2A14027E1C6AB5200068DE8F /* adele1.jpg in Resources */,
+				2ACBC0EF1C6EE36B0097EBDE /* zappos3.png in Resources */,
 				2ABD208F1C6864A5000DB369 /* numbers-icon-120.png in Resources */,
 				2ABD205A1C63C91F000DB369 /* Assets.xcassets in Resources */,
 				2A1402841C6ACD360068DE8F /* singing.jpg in Resources */,
