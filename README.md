@@ -1,6 +1,10 @@
 # Calculator - Yash Dalal
 
-I made a calculator that does basic math and is easy to use.  
+I made a calculator that does basic math and is easy to use.
+
+Basic functions: add, subtract, multiply, divide
+
+Additional support: decimals, negative numbers, chained operations ( -2 + 3 = 1 / 2 = 0.5 * 10 = 5)
 
 Calculators are fun but you know what's more fun? Adele calculators. Hidden throughout the app are Adele themed easter eggs to make the experience of doing math more fun. Here are some ways you can reveal easter eggs:
 
