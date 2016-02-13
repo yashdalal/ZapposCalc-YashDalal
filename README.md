@@ -6,3 +6,8 @@ Calculators are fun but you know what's more fun? Adele calculators. Hidden thro
 
 1. If the answer of your calculations evaluates to the title of Adele's [1st](https://en.wikipedia.org/wiki/19_(Adele_album)), [2nd](https://en.wikipedia.org/wiki/21_(Adele_album)) or [3rd](https://en.wikipedia.org/wiki/25_(Adele_album)).
 2. If you shake the phone. (ctrl-cmd-Z in the iOS simulator) This one works best with the volume turned up. Be careful though, it can get loud!
+
+
+![alt text](https://github.com/yashdalal/ZapposCalculatorYashDalal/blob/master/ZapposCalculator/zappos1.png "Calculator screenshot 1")
+![alt text](https://github.com/yashdalal/ZapposCalculatorYashDalal/blob/master/ZapposCalculator/zappos2.png "Calculator screenshot 2")
+![alt text](https://github.com/yashdalal/ZapposCalculatorYashDalal/blob/master/ZapposCalculator/zappos3.png "Calculator screenshot 3")
